@@ -1,0 +1,22 @@
+{
+  "name": "compress-pdf-tg-bot",
+  "description": "pdf size compressing telegram robot. Make your forks now",
+  "keywords": ["telegram", "pdf", "size", "compressor", "robot"],
+  "env": {
+        "APP_ID": {"description": "Get this value from https://my.telegram.org", "value": "14962060"},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "value": "b726ce690552a5707dd80294907f39e1"},
+        "BOT_TOKEN": {"description": "Get Bot Token From @BotFather Bot", "value": "5784397162:AAEeRjN3HfHaUir5Z-NzBYwcmfGggDOG1-k"},
+        "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
+  },
+  "buildpacks": [
+		{
+			"url": "heroku/python"
+		}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
